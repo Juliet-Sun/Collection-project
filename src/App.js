@@ -1,9 +1,10 @@
 import './App.css';
 import Colleges from "./components/College"
+import bakerCrest from "./images/bakerCrest.png"
 
 function App() {
   const colleges = [{
-    "college_emblem": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.baker-college.com%2F&psig=AOvVaw3zoRYx8-NsC3LEBtpD5eu4&ust=1698606987817000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKCh4qO6mYIDFQAAAAAdAAAAABAE",
+    "college_emblem": bakerCrest,
     "name": "Baker",
     "description": "First college"
   },

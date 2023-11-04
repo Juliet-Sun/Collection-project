@@ -4,11 +4,8 @@
 
 .body {
   background-color: #db8585;
-  width: 500px;
+  width: 100%;
   height: auto;
-  position:fixed;
-  left: 30%;
-  top: 25%;
 
   display: flex;
   flex-wrap: wrap;
