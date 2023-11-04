@@ -1,26 +1,76 @@
 .college {
     width: 20%;
-    height: 100%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-
     margin: 10px;
-
+    perspective: 1000px;
 }
 
-.college-emblem img{
+.emblem-section{
+    background-color: white;
+    height: 70%;
+    display: flex;
+}
+
+.college-emblem {
     width: 200px;
     height: 200px;
     object-fit: contain;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    margin-top: 10px;
+    margin: auto auto;
     background-color: white;
 }
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .college:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    display: flex;
+    transform: rotateY(180deg);
+  }
+
+  p{
+    margin: auto auto;
+    line-height: 50px;
+  }
+
+  #Baker {
+    background-color: rgb(206, 149, 27);
+  }
+
+  #WillRice {
+    background-color: rgb(255, 77, 0);
+  }
+

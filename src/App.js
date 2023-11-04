@@ -26,12 +26,12 @@ function App() {
   {
     "college_emblem": hanszenCrest,
     "name": "Hanszen",
-    "description": "Etablished in 1957. A reflection of the close and caring relationships among its members and have fun have fun during events like their own Mardi Gras, study breaks, or trips to Galveston. "
+    "description": "Established in 1957. A reflection of the close and caring relationships among its members and have fun have fun during events like their own Mardi Gras, study breaks, or trips to Galveston. "
   },
   {
     "college_emblem": wiessCrest,
     "name": "Wiess",
-    "description": "Etablished in 1957. Go Pumpkin Caroling at Halloween, sign up for Tabletop Theatre, celebrate Wiess Day, or hang out with your fellow Wiessmen at a Team Fun Friday Wiess."
+    "description": "Established in 1957. Go Pumpkin Caroling at Halloween, sign up for Tabletop Theatre, celebrate Wiess Day, or hang out with your fellow Wiessmen at a Team Fun Friday Wiess."
 
   },
   {
@@ -49,13 +49,13 @@ function App() {
   {
     "college_emblem": lovettCrest,
     "name": "Lovett",
-    "description": "Establisehd in 1968. Within those sturdy walls, Lovetteers carry on traditions like hosting the fancy Casino Party and socializing on the 2nd Floor Sundeck."
+    "description": "Established in 1968. Within those sturdy walls, Lovetteers carry on traditions like hosting the fancy Casino Party and socializing on the 2nd Floor Sundeck."
 
   }, 
   {
     "college_emblem": sidrichCrest,
     "name": "Sid Richardson",
-    "description": "Establisehd in 1971.Though they are the smallest of all the residential colleges on campus, Sidizens take pride in their tower. Every Friday, you can find them spending time together in their Country Club."},
+    "description": "Established in 1971. Though they are the smallest of all the residential colleges on campus, Sidizens take pride in their tower. Every Friday, you can find them spending time together in their Country Club."},
 
   {
     "college_emblem": martelCrest,
@@ -88,7 +88,7 @@ function App() {
       {/* body */}
       <div className="body">
         {colleges.map(colleges => 
-          <Colleges college_emblem={colleges.college_emblem} name={colleges.name} description={colleges.description} />
+          <Colleges college_emblem={colleges.college_emblem} name={colleges.name} description={colleges.description} color={colleges.color}/>
         )}
 
 
