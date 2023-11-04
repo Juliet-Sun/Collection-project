@@ -9,7 +9,7 @@ const Colleges = (props) => {
             <img src={props.college_emblem} alt=""/>
           </div>
           <h2>{props.name}</h2>
-          <h3>{props.description}</h3>
+          <p>{props.description}</p>
     </div>
   )
 }
